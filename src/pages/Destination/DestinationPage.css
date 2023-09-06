@@ -1,0 +1,67 @@
+.destination-page {
+	background-Image: url('../../assets/destination/background-destination-desktop.jpg');
+  background-Position: center;
+  background-Size: cover;
+  background-Repeat: no-repeat;
+  width: 1440px;
+  height: 900px;
+}
+.destination-container-main {
+  width: 100%;
+  height: 700px;
+  margin-top: 50px;
+  padding: 0px 163px 0px 166px;
+  display: flex;
+  justify-content: space-between;
+}
+.select-planet {
+  background-color: #0000;
+	border-color: #0000;
+  cursor: pointer;
+}
+.select-planet__text{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: auto;
+  color: #d0d6f9;
+	font-family: 'Barlow Condensed';
+	font-size: 16px;
+	letter-spacing: 2.7px;
+}
+ .select-planet__style::after {
+  content: "";
+	position: absolute;
+	background-color: hsl(231deg, 77%, 90%, 70%);
+	height: 4px;
+	width: 0%;
+	left: 0;
+	bottom: -10px;
+	transition: 0.3s;
+}
+.select-planet__style:hover::after {
+  width: 98%;
+  transition: 0.3s;
+}
+.select-planet__style-active::after {
+  content: "";
+	position: absolute;
+	background-color: #fff !important;
+	height: 4px;
+	width: 98% !important;
+	left: 0;
+	bottom: -10px;
+	transition: 0.3s;
+}
+
+@media screen and (max-Width: 810px) {
+  .destination-page {
+    background-image: url('../../assets/destination/background-destination-tablet.jpg');
+  }
+}
+
+@media screen and (max-Width: 412px) {
+  .destination-page {
+    background-image: url('../../assets/destination/background-destination-mobile.jpg');
+  }
+}
